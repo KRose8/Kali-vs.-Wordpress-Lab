@@ -28,7 +28,9 @@ Time spent: 5 hours spent in total
   - [X] GIF Walkthrough: https://i.imgur.com/kH7rEe8.gifv
   - [X] Steps to recreate: 
 	1. Go to wpdistillery.local (wpdistillery.dev redirects there).
-	2. Proceed to the comment box, and type in <a title='x onmouseover=alert(unescape(/hello%20world/.source)) style=position:absolute;left:0;top:0;width:5000px;height:5000px  AAAAAAAAAAAA...[64 kb]..AAA'></a> (64 kbs of 'A's are necessary in order to put the length of the comment over the acceptable limit)
+	2. Proceed to the comment box, and type in <a title='x onmouseover=alert(unescape(/hello%20world/.source))
+	
+	style=position:absolute;left:0;top:0;width:5000px;height:5000px  AAAAAAAAAAAA...[64 kb]..AAA'></a> (64 kbs of 'A's are necessary in order to put the length of the comment over the acceptable limit)
 	3. The length of the comment will cause it to be truncated when inserted, which leads to malformed HTML displayed which is vulnerable to JavaScript insertion
 	4. Submit the comment - upon viewing the page, the text box will appear with the malicious script (in this case, simply a "hello world" message)
   - [X] Affected source code:
